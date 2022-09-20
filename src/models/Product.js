@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
 const conn = require('../database');
-const Invoice = require('./invoice');
+const Invoice = require('./Invoice');
 
 const Product = conn.define('products', {
   id: {
