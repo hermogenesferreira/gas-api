@@ -1,7 +1,10 @@
 const puppeteer = require('puppeteer');
 
 module.exports = async function ScrapGas(url) {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox'],
+  });
   const page = await browser.newPage();
   await page.goto(url);
   await page.waitForSelector('#formPrincipal');
