@@ -1,4 +1,4 @@
-import Invoice from '../models/invoice';
+import Invoice from '../models/Invoice';
 import ScrapGas from '../services/ScrapGas';
 import Product from '../models/Product';
 const { Op } = require('sequelize');
